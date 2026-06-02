@@ -2,18 +2,30 @@
 using namespace std;
 #define go                            \
     ios_base::sync_with_stdio(false); \
-    cin.tie(NULL);
+    cin.tie(nullptr);
 #define ll long long
 
 void solve()
 {
-    ll n;
-    cin >> n;
+    ll n, a, b, s = 0;
+    cin >> n >> a >> b;
+
     for (int i = 1; i <= n; i++)
     {
-        if (n % i == 0)
-            cout << i << endl;
+        ll li = i, ss = 0;
+        while (li != 0)
+        {
+            ll last = li % 10;
+            ss += last;
+            li /= 10;
+        }
+
+        if (ss >= a && ss <= b)
+        {
+            s += i;
+        }
     }
+    cout << s << "\n";
 }
 
 int main()
