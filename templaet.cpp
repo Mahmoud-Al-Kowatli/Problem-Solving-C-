@@ -1,22 +1,18 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-#define go                            \
-    ios_base::sync_with_stdio(false); \
-    cin.tie(nullptr);
-#define ll long long
-
+#define go ios_base::sync_with_stdio(false);cin.tie(nullptr);
+#define int long long
+#define  endl "\n"
 void solve()
 {
-    ll n;
-    cin >> n;
+    
 }
-
-int main()
+signed main() 
 {
     go;
-    int mk = 1;
-    // cin >> mk;
-    while (mk--)
+    int t =1; 
+    cin>>t;
+    while (t--)
     {
         solve();
     }
